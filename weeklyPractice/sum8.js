@@ -1,20 +1,13 @@
 // *Average of Scores*
-//    Write a program to create an array of 5 exam scores. Calculate and print the average of the scores.
-//  function marks(a){
-// let b=0;
+//  Write a program to create an array of 5 exam scores. Calculate and print the average of the scores.
+function marks(a){
+let b=0;
 
-// for(i=0;i<a.length;i++){
+for(i=0;i<a.length;i++){
 
-// b=b+a[i];
-// }
-// avr=b/a.length;
-// console.log(avr+"%")
-//  }
-//  marks([68,87,69,64,80])
-
-function adding(scores){
-    let sum=0;
-    for(i=0;i<scores.length;i++){
-        
-    }
+b=b+a[i];
 }
+avr=b/a.length;
+console.log(avr+"%")
+ }
+ marks([68,87,69,64,80]);

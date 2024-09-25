@@ -4,3 +4,4 @@ while(i<=16){
     console.log(`${num}*${i}=${num*i}`);
     i++;
 }
+

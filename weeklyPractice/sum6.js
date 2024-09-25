@@ -4,7 +4,7 @@ function square(num){
     let i=1;
     while(num<10000){
         num=num*5;
-        i++
+       i++;
     }
     console.log(num);
 }
