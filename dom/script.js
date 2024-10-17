@@ -48,6 +48,6 @@ function gcd(a, b) {
 }
 
 // Example usage:
-const num1 = 48;
-const num2 = 18;
-console.log(`The GCD of ${num1} and ${num2} is ${gcd(num1, num2)}`);
+const num1 = 96;
+const num2 = 88;
+console.log(`The GCD of ${num1} and ${num2} is ${gcd(num1,num2)}`);

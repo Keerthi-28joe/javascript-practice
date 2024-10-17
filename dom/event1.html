@@ -1,0 +1,98 @@
+<!-- <input id="num1">
+<input id="num2">
+<button onclick="finalResult()">add</button>
+<p id="result">result</p>
+
+<script>
+  var a=document.getElementById("num1");
+  var b=document.getElementById("num2");
+  var c=document.getElementById("result");
+
+  function finalResult(){
+    var avalue=Number(a.value);
+    var bvalue=Number(b.value);
+    var total=avalue+bvalue;
+    result.textContent=total;
+   
+  }
+</script> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+<ul id="keer">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Carrot</li>
+</ul>
+</div>
+<button id="add">Add</button>
+<button id="remove">Remove</button>
+
+<script>
+const a=document.getElementById("container");
+const b=document.getElementById("keer");
+const c=document.getElementById("add");
+const d=document.getElementById("remove");
+
+c.addEventListener("click",()=>{
+  let e=document.createElement("keer");
+  e.textContent="Raddish";
+  e.classList.add("one");
+  b.appendChild(e);
+})
+
+d.addEventListener("click",()=>{
+  const f=document.querySelector(".one");
+  f.remove();
+})
+
+const link=document.createElement("a");
+link.href="https://www.youtube.com/";
+link.textContent="click me";
+a.appendChild(link);
+</script>
+
+ </body>
+ </html>
+
+
+   -->
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+  <h1 id="header">Hello World</h1>
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <button id="changeText">Change Text</button>
+
+  <script>
+    // Getting references to DOM nodes
+    const header = document.getElementById("header");
+    const paragraphs = document.querySelectorAll("p");
+    const button = document.getElementById("changeText");
+
+    // Manipulating DOM content
+    button.addEventListener("click", () => {
+       header.textContent = "New Heading";
+      paragraphs.forEach((para, index) => {
+        para.textContent = `Paragraph ${index + 1} changed!`;
+      });
+    });
+  </script>
+</body>
+</html>

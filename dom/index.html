@@ -1,29 +1,44 @@
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <h1>I'm Keerthika</h1>
-    <h2>From Tenkasi</h2>
-    <script>
-        document.body.style.background='pink';
-        setTimeout(()=>document.body.style.background='',3000)
-    </script>
-</body>
-</html> -->
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>About elk</title>
-</head>
-<body>
-  <p>The truth about elk.</p>
+  <div id="container">
+<ul id="keer">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Carrot</li>
+</ul>
+  </div>
+<button id="adding">add</button>
+<button id="remove">remove</button>
+
   <script>
-    document.body.style.background='pink';
-    setTimeout(()=>document.body.style.background='',3000);
-    </script>
+   const container=document.getElementById("container");
+    const d=document.getElementById("keer");
+    const e=document.getElementById("remove")
+    const c=document.getElementById("adding")
+   
+    c.addEventListener("click",()=>{
+      let b=document.createElement("li")
+      b.textContent="Radish";
+      b.classList.add("one")
+      d.appendChild(b)
+    });
+
+    e.addEventListener("click",()=>{
+      const f=document.querySelector(".one");
+      f.remove()
+    });
+    const link=document.createElement("a");
+    link.href="https://www.youtube.com/";
+    link.textContent="click";
+    container.appendChild(link);
+    
+  </script>
 </body>
 </html>

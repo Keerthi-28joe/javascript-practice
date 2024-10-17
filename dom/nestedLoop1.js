@@ -8,3 +8,4 @@ function printStr(n){
     }
 }
 printStr(3);
+

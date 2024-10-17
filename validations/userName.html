@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="username" required>
+        <span id="error"></span>
+        <button type="submit">Submit</button>
+        <script>
+            const a=document.getElementById("form");
+            const b=document.getElementById("username");
+            const c=document.getElementById("error");
+
+            a.addEventListener("click", function(event){
+           if(!b.validity.valid){
+            if(b.validity.valueMissing){
+                c.textContent="Email is required";
+            }
+            else if(b.validity.typeMismatch){
+                c.textContent="Enter corrcet mail";
+            }
+            event.preventDefault();
+           }
+            });
+
+        </script>
+    </form>
+</body>
+</html>
